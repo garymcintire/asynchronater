@@ -22,7 +22,7 @@ Somewhere in the RL algorithm call  asynchronate(net_list). It may be useful to 
 each episode. Or it may be better to call it every 10(or even 1) or so action cycles. Experimentation is
 needed here.
 Typically the net_list will consist of the policy network but may also include the value_function, target networks or others.
-
+```
 Requirements:
 
 python
@@ -30,6 +30,7 @@ python
 numpy
 
 keras        # tho it could easily be modified. Needs to be able to access the weights and save.
+```
 
 Its useful to pass the num_processes and update_frequency to your RL program for experimenting
 
