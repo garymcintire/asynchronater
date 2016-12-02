@@ -13,10 +13,11 @@ There are only two functions exported here...
 asynchronater_launch(num_processes)      # start several processes
 
 asynchronate(net_list)                   # add my weight changes to the global wt file and update my nets with the result
+```
 
 Near the beginning of your RL code, call asynchronater_launch(num_processes). This
 uses the command line arguments to launch multiple processes.
-```
+ 
 Somewhere in the RL algorithm call  asynchronate(net_list). It may be useful to call it
 each episode. Or it may be better to call it every 10(or even 1) or so action cycles. Experimentation is
 needed here.
