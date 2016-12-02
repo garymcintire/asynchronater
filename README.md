@@ -6,9 +6,9 @@ This is for running multiple reinforcement learning algorithms simultaneously in
 will synchronize the weights of their networks when asynchronate is called.
 
 If you have an RL algorithm written and you want to parallelize it while sharing weight updates in the manner of
-Deepmind's A3C algorithm, use this.
+Deepmind's A3C algorithm, https://arxiv.org/pdf/1602.01783.pdf  use this.
 
-Their are only two functions exported here...
+There are only two functions exported here...
 
 asynchronater_launch(num_processes)      # start several processes
 
@@ -28,7 +28,7 @@ python
 
 numpy
 
-keras       # tho it could easily be modified. Needs to be able to access the weights and save.
+keras        # tho it could easily be modified. Needs to be able to access the weights and save.
 
 Its useful to pass the num_processes and update_frequency to your RL program for experimenting
 
