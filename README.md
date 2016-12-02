@@ -11,6 +11,7 @@ Deepmind's A3C algorithm, use this.
 Their are only two functions exported here...
 
 asynchronater_launch(num_processes)     # start several processes
+
 asynchronate(net_list)                  # add my weight changes to the global wt file and update my nets with the result
 
 Near the beginning of your RL code, call asynchronater_launch(num_processes). This
